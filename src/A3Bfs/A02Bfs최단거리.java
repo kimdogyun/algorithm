@@ -30,9 +30,6 @@ public class A02Bfs최단거리 {
         loop1:
         while (!myQue.isEmpty()){
             int [] temp = myQue.poll() ;
-//            if (temp[0]==target){
-//                answer = temp[1];
-//            }
             for (int a : adjList.get(temp[0])){
                 if (visited[a])continue;
                 myQue.add(new int [] {a,temp[1]+1});
